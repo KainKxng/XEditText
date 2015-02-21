@@ -3,7 +3,6 @@
 <p><strong>Demo</strong></p>
 
 -------
-
 <code>
 <pre>
 public class MainActivity extends Activity {
@@ -17,7 +16,7 @@ public class MainActivity extends Activity {
         mPassword.setDrawableRightListener(new DrawableRightListener() {            
             @Override
             public void onDrawableRightClick(View view) {
-                // ÄãµÄ¾ßÌåÂß¼­
+                // 你的具体逻辑
             }
         }) ;
     }
