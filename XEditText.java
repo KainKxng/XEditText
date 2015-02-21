@@ -1,5 +1,3 @@
-package cn.ziona.smarthome.ui.view;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
