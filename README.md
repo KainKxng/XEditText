@@ -1,5 +1,6 @@
 ﻿加强版的EditText,可以为DrawableLeft和DrawableRight设置点击事件
 
+<p>欢迎大家光临我的博客 :) [http://wiyi.org/](http://wiyi.org/ "赤子心")</p>
 <p><strong>Demo</strong></p>
 
 -------
