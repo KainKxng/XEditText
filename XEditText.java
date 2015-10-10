@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 
 /**
- * ¼ÓÇ¿°æµÄEditText,¿ÉÒÔÏìÓ¦DrawableLeft ºÍ DrawableRightµÄµã»÷ÊÂ¼ş
- * ÒªÊµÏÖÏìÓ¦µã»÷,ÏÈÉèÖÃsetDrawableListener
+ * åŠ å¼ºç‰ˆçš„EditText,å¯ä»¥å“åº”DrawableLeft å’Œ DrawableRightçš„ç‚¹å‡»äº‹ä»¶
+ * è¦å®ç°å“åº”ç‚¹å‡»,å…ˆè®¾ç½®setDrawableListener
  * @author xing
  * @version 1.1
  */
@@ -21,12 +21,6 @@ public class XEditText extends EditText {
     final int DRAWABLE_TOP = 1;
     final int DRAWABLE_RIGHT = 2;
     final int DRAWABLE_BOTTOM = 3;
-
-	@SuppressLint("NewApi")
-	public XEditText(Context context, AttributeSet attrs, int defStyleAttr,
-			int defStyleRes) {
-		super(context, attrs, defStyleAttr, defStyleRes);
-	}
 
 	public XEditText(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
