@@ -13,11 +13,11 @@ import android.widget.EditText;
  * @version 1.1
  */
 public class XEditText extends EditText {
-	
+
 	private DrawableLeftListener mLeftListener ;
 	private DrawableRightListener mRightListener ;
-	
-	final int DRAWABLE_LEFT = 0;
+
+		final int DRAWABLE_LEFT = 0;
     final int DRAWABLE_TOP = 1;
     final int DRAWABLE_RIGHT = 2;
     final int DRAWABLE_BOTTOM = 3;
@@ -45,7 +45,7 @@ public class XEditText extends EditText {
 	public interface DrawableLeftListener {
 		public void onDrawableLeftClick(View view) ;
 	}
-	
+
 	public interface DrawableRightListener {
 		public void onDrawableRightClick(View view) ;
 	}
@@ -59,20 +59,20 @@ public class XEditText extends EditText {
 				Drawable drawableRight = getCompoundDrawables()[DRAWABLE_RIGHT] ;
 				if (drawableRight != null && event.getRawX() >= (getRight() - drawableRight.getBounds().width())) {
 					mRightListener.onDrawableRightClick(this) ;
-	        		return true ;
+	        		return false ; //返回false避免点击时Edtittext会获取焦点的问题
 				}
 			}
-			
+
 			if (mLeftListener != null) {
 				Drawable drawableLeft = getCompoundDrawables()[DRAWABLE_LEFT] ;
 				if (drawableLeft != null && event.getRawX() <= (getLeft() + drawableLeft.getBounds().width())) {
 					mLeftListener.onDrawableLeftClick(this) ;
-	        		return true ;
+	        		return false ;
 				}
 			}
 			break;
 		}
-		
+
 		return super.onTouchEvent(event);
 	}
 }
